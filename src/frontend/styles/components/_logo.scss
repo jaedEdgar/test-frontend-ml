@@ -1,0 +1,10 @@
+.logo {
+  width: 56px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../assets/Logo_ML.png');
+  @include retina {
+    background-image: url('../assets/Logo_ML@2x.png');
+  }
+}

@@ -1,0 +1,32 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  color: $gray;
+  font-weight: 500;
+  padding: 16px 0;
+
+  &--item {
+    margin-right: 20px;
+    position: relative;
+    &::after {
+      content: ' ';
+      background-image: url('../assets/chevron_right-black-18dp.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 16px;
+      height: 14px;
+      position: absolute;
+      right: -17px;
+      top: 0;
+    }
+    &:last-child {
+      font-weight: 800;
+      margin-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
