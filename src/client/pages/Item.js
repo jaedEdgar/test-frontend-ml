@@ -78,8 +78,8 @@ export default function Item() {
           </div>
         </>
       ) : (
-        <Loader />
-      )}
+          <Loader />
+        )}
     </>
   );
 }

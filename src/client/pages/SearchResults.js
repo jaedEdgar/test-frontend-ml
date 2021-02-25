@@ -59,8 +59,8 @@ export default function SearchResults() {
           <ItemsSearch data={data} />
         </>
       ) : (
-        <Loader />
-      )}
+          <Loader />
+        )}
     </>
   );
 }
