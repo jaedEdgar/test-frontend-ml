@@ -41,7 +41,7 @@ const client = {
   name: 'client',
   target: 'web',
   entry: {
-    client: ['@babel/polyfill', './src/frontend/index.js'],
+    client: ['@babel/polyfill', './src/client/index.js'],
   },
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -100,7 +100,7 @@ const server = {
   target: 'node',
   externals: [nodeExternals(), { react: 'React' }],
   entry: {
-    server: ['@babel/polyfill', path.resolve(__dirname, 'src', 'server.js')],
+    server: ['@babel/polyfill', path.resolve(__dirname, 'src', 'server', 'index.js')],
   },
   output: {
     path: path.resolve(__dirname, 'build'),
