@@ -1,19 +1,22 @@
-import React, { createElement } from 'react';
+import React from 'react';
 import { renderToString, renderToStaticMarkup } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
 
 import Base from '../client/components/Base';
 import Routes from '../client/Routes';
 
+const scripts = ['/vendor.js', '/client.js'];
 
-export default (async ({ url }, res) => {
-	const scripts = ['/vendor.js', '/client.js'];
-	const routes = createElement(Routes, { url: url })
-	const staticRouter = createElement(StaticRouter, { location: url }, routes)
-	const appMarkup = renderToString(staticRouter);
-	const base = createElement(Base, { children: appMarkup, scripts: scripts })
-	const html = renderToStaticMarkup(base);
-	const response = `<!doctype html>${html}`
+export default async ({ url }, res) => {
+	const appMarkup = renderToString(
+		<StaticRouter location={url}>
+			<Routes url={url} />
+		</StaticRouter>
+	);
 
-	res.send(response);
-});
+	const html = renderToStaticMarkup(
+		<Base children={appMarkup} scripts={scripts} />
+	);
+
+	res.send(`<!doctype html>${html}`);
+};
