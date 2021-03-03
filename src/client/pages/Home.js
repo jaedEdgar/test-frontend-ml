@@ -1,22 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../components/navbar';
-import { useHistory } from 'react-router-dom';
+import useSearch from "../hooks/useSearch"
 
 export default function Home() {
-  let history = useHistory();
-  const [valueSearch, setValueSearch] = useState('');
-
-  const handleSubmitSearch = () => {
-    history.push(`/items?search=${encodeURI(valueSearch)}`);
-  };
-
+  const [valueSearch, setValueSearch, handleSubmitSearch] = useSearch()
   return (
-    <>
-      <Navbar
-        handleSubmitSearch={() => handleSubmitSearch()}
-        value={valueSearch}
-        handleValueChange={setValueSearch}
-      />
-    </>
+    <Navbar
+      handleSubmitSearch={handleSubmitSearch}
+      value={valueSearch}
+      handleValueChange={setValueSearch}
+    />
   );
 }
