@@ -4,7 +4,7 @@ const Base = ({ children, scripts }) => (
   <html>
     <head>
       <meta charSet='UTF-8' />
-      <title>Server Side Rendered React App!!</title>
+      <title>Mercado Libre México </title>
       <link rel='stylesheet' href='/styles.css' />
     </head>
     <body>

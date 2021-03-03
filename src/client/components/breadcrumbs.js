@@ -4,9 +4,9 @@ export default function breadcrumbs({ breadcrumbsList }) {
   return (
     <div className='container'>
       <ul className='breadcrumbs'>
-        {breadcrumbsList.map((el, index) => (
+        {breadcrumbsList.length !== 0 && breadcrumbsList.map((breadcrumb, index) => (
           <li key={index.toString()} className='breadcrumbs--item'>
-            {el}
+            {breadcrumb}
           </li>
         ))}
       </ul>
