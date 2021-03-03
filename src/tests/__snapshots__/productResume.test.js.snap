@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render my component 1`] = `
+<div
+  className="product-wrapp"
+>
+  <div
+    className="product-picture"
+  >
+    <img
+      alt=""
+      src="https://http2.mlstatic.com/D_828063-MLA44280741156_122020-O.jpg"
+    />
+  </div>
+  <div
+    className="product-resume"
+  >
+    <span
+      className="product-resume--status"
+    >
+      Nuevo
+       -
+       
+      500
+       vendidos
+    </span>
+    <h1
+      className="product-resume--title"
+    >
+      Nokia 23 M 32 Gb Gris Carbón 2 Gb Ram
+    </h1>
+    <span
+      className="product-resume--price"
+    >
+      $ 
+      16,999
+      <i
+        className="product-resume--price-decimals"
+      >
+        00
+      </i>
+    </span>
+    <button
+      className="btn btn-primary"
+    >
+      Comprar
+    </button>
+  </div>
+</div>
+`;

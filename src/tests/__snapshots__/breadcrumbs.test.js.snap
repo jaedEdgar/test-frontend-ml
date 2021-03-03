@@ -36,6 +36,42 @@ exports[`Breadcrumbs test snapshot  1`] = `
 </div>
 `;
 
+exports[`Bshould render my component 1`] = `
+<div
+  className="container"
+>
+  <ul
+    className="breadcrumbs"
+  >
+    <li
+      className="breadcrumbs--item"
+    >
+      Lorem ipsum dolor
+    </li>
+    <li
+      className="breadcrumbs--item"
+    >
+      Lorem ipsum dolor
+    </li>
+    <li
+      className="breadcrumbs--item"
+    >
+      Lorem ipsum dolor
+    </li>
+    <li
+      className="breadcrumbs--item"
+    >
+      Lorem ipsum dolor
+    </li>
+    <li
+      className="breadcrumbs--item"
+    >
+      Lorem ipsum dolor
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`renders learn Breadcrumbs  1`] = `
 <div
   className="container"

@@ -13,7 +13,7 @@ const list = [
 ]
 
 
-test('Breadcrumbs test snapshot ', () => {
+test('Bshould render my component', () => {
   const component = renderer.create(<Breadcrumbs breadcrumbsList={list} />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
