@@ -69,6 +69,7 @@
   @include retina {
     background-image: url('../assets/ic_shipping@2x.png');
   }
+  background-size: 100% auto;
   width: 18px;
   height: 18px;
   display: inline-block;
