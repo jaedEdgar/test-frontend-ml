@@ -1,18 +1,29 @@
-export default function formatItem(data, description) {
-  const price = data.price.toString().split('.');
+export default function formatItem({
+  id,
+  title,
+  currency_id,
+  pictures,
+  condition,
+  sold_quantity,
+  price,
+  shipping: { free_shipping },
+},
+  description
+) {
+  const formatPrice = price.toString().split('.');
   return {
     item: {
-      id: data.id,
-      title: data.title,
+      id: id,
+      title: title,
       price: {
-        currency: data.currency_id,
-        amount: price[0],
-        decimals: price[1] || 0,
+        currency: currency_id,
+        amount: formatPrice[0],
+        decimals: formatPrice[1] || 0,
       },
-      picture: data.pictures[0],
-      condition: data.condition,
-      free_shipping: data.shipping.free_shipping,
-      sold_quantity: data.sold_quantity,
+      picture: pictures[0],
+      condition: condition,
+      free_shipping: free_shipping,
+      sold_quantity: sold_quantity,
       description: description,
     },
   };

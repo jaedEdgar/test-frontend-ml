@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`will pass 1`] = `
+<div
+  className="container"
+>
+  <ul
+    className="result-search"
+  >
+    <li
+      className="result-search--item"
+    >
+      <div
+        className="result-search--preview"
+      >
+        <img
+          alt="Asus Rog Phone 3 Zs661ks Dual Sim 256 Gb Negro Brillante 12 Gb Ram"
+          src="http://http2.mlstatic.com/D_771888-MLA43752069008_102020-I.jpg"
+        />
+      </div>
+      <div
+        className="result-search--wrapp"
+      >
+        <div
+          className="result-search--description"
+        >
+          <div
+            className="result-search--description-price"
+          >
+            <span
+              className="result-search--description-mount"
+            >
+              $ 
+              224,990
+            </span>
+            <i
+              className="free-shipping-icon"
+              title="Envío gratis"
+            />
+          </div>
+          <h2>
+            <a
+              className="result-search--description-title"
+              href="/items/MLA908778425"
+              onClick={[Function]}
+            >
+              Asus Rog Phone 3 Zs661ks Dual Sim 256 Gb Negro Brillante 12 Gb Ram
+            </a>
+          </h2>
+        </div>
+        <span
+          className="result-search--description-city"
+        >
+          Colegiales
+        </span>
+      </div>
+    </li>
+    <li
+      className="result-search--item"
+    >
+      <div
+        className="result-search--preview"
+      >
+        <img
+          alt="Asus Rog Phone 3 Zs661ks Dual Sim 256 Gb Negro Brillante 12 Gb Ram"
+          src="http://http2.mlstatic.com/D_771888-MLA43752069008_102020-I.jpg"
+        />
+      </div>
+      <div
+        className="result-search--wrapp"
+      >
+        <div
+          className="result-search--description"
+        >
+          <div
+            className="result-search--description-price"
+          >
+            <span
+              className="result-search--description-mount"
+            >
+              $ 
+              224,990
+            </span>
+            <i
+              className="free-shipping-icon"
+              title="Envío gratis"
+            />
+          </div>
+          <h2>
+            <a
+              className="result-search--description-title"
+              href="/items/MLA908778425"
+              onClick={[Function]}
+            >
+              Asus Rog Phone 3 Zs661ks Dual Sim 256 Gb Negro Brillante 12 Gb Ram
+            </a>
+          </h2>
+        </div>
+        <span
+          className="result-search--description-city"
+        >
+          Colegiales
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

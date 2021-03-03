@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url('../assets/Logo_ML.png');
+  background-size: 100% auto;
   @include retina {
     background-image: url('../assets/Logo_ML@2x.png');
   }

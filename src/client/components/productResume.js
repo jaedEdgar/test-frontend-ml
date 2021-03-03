@@ -1,24 +1,25 @@
 import React from 'react';
 import formatNumber from '../utils/formatNumber';
 
-export default function itemResume({ data }) {
+export default function productResume({ data: { item } }) {
+  const { condition, sold_quantity, picture, title, price, } = item
+  const { amount, decimals } = price
+  const { secure_url } = picture
   return (
     <div className='product-wrapp'>
       <div className='product-picture'>
-        <img src={data.item.picture.secure_url} alt='' />
+        <img src={secure_url} alt='' />
       </div>
       <div className='product-resume'>
         <span className='product-resume--status'>
-          {data.item.condition === 'new' ? 'Nuevo' : 'Usado'} -{' '}
-          {data.item.sold_quantity} vendidos
+          {condition === 'new' ? 'Nuevo' : 'Usado'} -{' '}
+          {sold_quantity} vendidos
         </span>
-        <h1 className='product-resume--title'>{data.item.title}</h1>
+        <h1 className='product-resume--title'>{title}</h1>
         <span className='product-resume--price'>
-          $ {formatNumber(data.item.price.amount)}
+          $ {formatNumber(amount)}
           <i className='product-resume--price-decimals'>
-            {data.item.price.decimals <= 1
-              ? `${data.item.price.decimals}0`
-              : data.item.price.decimals}
+            {decimals <= 1 ? `${decimals}0` : decimals}
           </i>
         </span>
         <button className='btn btn-primary'>Comprar</button>

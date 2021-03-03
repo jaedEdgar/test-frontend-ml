@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render ItemDescription Snapshot 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="product-description"
+  >
+    <span
+      className="product-description--header"
+    >
+      Descripción del producto
+    </span>
+    <p
+      className="product-description--paragraph"
+    >
+      Lorem ipsum
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders learn ItemDescription  1`] = `
+<div
+  className="container"
+>
+  <div
+    className="product-description"
+  >
+    <span
+      className="product-description--header"
+    >
+      Descripción del producto
+    </span>
+    <p
+      className="product-description--paragraph"
+    >
+      Lorem ipsum
+    </p>
+  </div>
+</div>
+`;

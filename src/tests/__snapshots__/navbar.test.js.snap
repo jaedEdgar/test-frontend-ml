@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Navbar test  1`] = `
+<header
+  className="navbar navbar-search"
+  onSubmit={[Function]}
+>
+  <div
+    className="container"
+  >
+    <a
+      className="logo"
+      href="/"
+    />
+    <form
+      className="navbar-search--form"
+    >
+      <input
+        className="navbar-search--input"
+        name="search"
+        onChange={[Function]}
+        placeholder="Nunca dejes de buscar"
+        type="text"
+        value="Lorem ipsum"
+      />
+      <button
+        className="navbar-search--button"
+        onClick={[Function]}
+        type="submit"
+      >
+        <span />
+      </button>
+    </form>
+  </div>
+</header>
+`;
+
+exports[`renders learn Breadcrumbs  1`] = `
+<header
+  className="navbar navbar-search"
+  onSubmit={[Function]}
+>
+  <div
+    className="container"
+  >
+    <a
+      className="logo"
+      href="/"
+    />
+    <form
+      className="navbar-search--form"
+    >
+      <input
+        className="navbar-search--input"
+        name="search"
+        onChange={[Function]}
+        placeholder="Nunca dejes de buscar"
+        type="text"
+        value="Lorem ipsum"
+      />
+      <button
+        className="navbar-search--button"
+        onClick={[Function]}
+        type="submit"
+      >
+        <span />
+      </button>
+    </form>
+  </div>
+</header>
+`;
+
+exports[`should render my component  1`] = `
+<header
+  className="navbar navbar-search"
+  onSubmit={[Function]}
+>
+  <div
+    className="container"
+  >
+    <a
+      className="logo"
+      href="/"
+    />
+    <form
+      className="navbar-search--form"
+    >
+      <input
+        className="navbar-search--input"
+        name="search"
+        onChange={[Function]}
+        placeholder="Nunca dejes de buscar"
+        type="text"
+        value="Lorem ipsum"
+      />
+      <button
+        className="navbar-search--button"
+        onClick={[Function]}
+        type="submit"
+      >
+        <span />
+      </button>
+    </form>
+  </div>
+</header>
+`;

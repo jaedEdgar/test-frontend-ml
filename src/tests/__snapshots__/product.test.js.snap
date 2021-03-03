@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`will pass 1`] = `
+<li
+  className="result-search--item"
+>
+  <div
+    className="result-search--preview"
+  >
+    <img
+      alt="Xiaomi Poco X3 Dual Sim 64 Gb Out Of The Blue 6 Gb Ram"
+      src="http://http2.mlstatic.com/D_998849-MLA44698052458_012021-I.jpg"
+    />
+  </div>
+  <div
+    className="result-search--wrapp"
+  >
+    <div
+      className="result-search--description"
+    >
+      <div
+        className="result-search--description-price"
+      >
+        <span
+          className="result-search--description-mount"
+        >
+          $ 
+          80,999
+        </span>
+        <i
+          className="free-shipping-icon"
+          title="Envío gratis"
+        />
+      </div>
+      <h2>
+        <a
+          className="result-search--description-title"
+          href="/items/MLA909240269"
+          onClick={[Function]}
+        >
+          Xiaomi Poco X3 Dual Sim 64 Gb Out Of The Blue 6 Gb Ram
+        </a>
+      </h2>
+    </div>
+    <span
+      className="result-search--description-city"
+    >
+      Rosario
+    </span>
+  </div>
+</li>
+`;
